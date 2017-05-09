@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="Topis" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cbf-E2-Syx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                    <color key="backgroundColor" red="1" green="0.58303493923611116" blue="0.1979294103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="9yO-CY-wiW"/>
+                    </constraints>
+                </view>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tv-9X-cqh">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="6Y4-jZ-s8C"/>
+                    </constraints>
+                    <color key="barTintColor" red="1" green="0.58431372549019611" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <items>
+                        <navigationItem title="Title" id="Hhs-V4-mK3"/>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Cbf-E2-Syx" secondAttribute="trailing" id="Fbs-bW-65q"/>
+                <constraint firstItem="6Tv-9X-cqh" firstAttribute="top" secondItem="Cbf-E2-Syx" secondAttribute="bottom" id="LUR-hv-67S"/>
+                <constraint firstItem="Cbf-E2-Syx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mkh-Wn-iI4"/>
+                <constraint firstAttribute="trailing" secondItem="6Tv-9X-cqh" secondAttribute="trailing" id="QVT-Lq-viz"/>
+                <constraint firstItem="Cbf-E2-Syx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nZP-ld-wSf"/>
+                <constraint firstItem="6Tv-9X-cqh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="o8G-xa-MVy"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
