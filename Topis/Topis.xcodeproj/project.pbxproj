@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		057A9CA8AEFECF09C6E75F8A /* Pods_TopisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDED02ADF71FDC06EF7CC37 /* Pods_TopisTests.framework */; };
+		B98B9DBC1EC17A6000C8DF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B9DBB1EC17A6000C8DF53 /* AppDelegate.swift */; };
+		B98B9DBE1EC17A6000C8DF53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B9DBD1EC17A6000C8DF53 /* ViewController.swift */; };
+		B98B9DC11EC17A6000C8DF53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98B9DBF1EC17A6000C8DF53 /* Main.storyboard */; };
+		B98B9DC31EC17A6000C8DF53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98B9DC21EC17A6000C8DF53 /* Assets.xcassets */; };
+		B98B9DC61EC17A6000C8DF53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98B9DC41EC17A6000C8DF53 /* LaunchScreen.storyboard */; };
+		B98B9DD11EC17A6100C8DF53 /* TopisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B9DD01EC17A6100C8DF53 /* TopisTests.swift */; };
+		B98B9DDC1EC17A6100C8DF53 /* TopisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B9DDB1EC17A6100C8DF53 /* TopisUITests.swift */; };
+		EDFBB6876D2136B8D132CEEC /* Pods_Topis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DF01E652F841E4527E5B92 /* Pods_Topis.framework */; };
+		F7C1737FB15AD9F7BF505478 /* Pods_TopisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C526F0B26DB0F1E0A3FB62 /* Pods_TopisUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B98B9DCD1EC17A6100C8DF53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B98B9DB01EC17A6000C8DF53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B98B9DB71EC17A6000C8DF53;
+			remoteInfo = Topis;
+		};
+		B98B9DD81EC17A6100C8DF53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B98B9DB01EC17A6000C8DF53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B98B9DB71EC17A6000C8DF53;
+			remoteInfo = Topis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D43899CB0CEF8029C38B263 /* Pods-TopisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopisTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopisTests/Pods-TopisTests.debug.xcconfig"; sourceTree = "<group>"; };
+		10267D1A9B30AFDA5F6CF946 /* Pods-Topis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Topis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Topis/Pods-Topis.debug.xcconfig"; sourceTree = "<group>"; };
+		2A87A74EF17B909A13206CA4 /* Pods-TopisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopisUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopisUITests/Pods-TopisUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5B76E67032E7E8541C7CFAB9 /* Pods-TopisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopisUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopisUITests/Pods-TopisUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		72C526F0B26DB0F1E0A3FB62 /* Pods_TopisUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopisUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81DF01E652F841E4527E5B92 /* Pods_Topis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Topis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BDED02ADF71FDC06EF7CC37 /* Pods_TopisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98B9DB81EC17A6000C8DF53 /* Topis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Topis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98B9DBB1EC17A6000C8DF53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B98B9DBD1EC17A6000C8DF53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B98B9DC01EC17A6000C8DF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B98B9DC21EC17A6000C8DF53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B98B9DC51EC17A6000C8DF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B98B9DC71EC17A6000C8DF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B98B9DCC1EC17A6100C8DF53 /* TopisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98B9DD01EC17A6100C8DF53 /* TopisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopisTests.swift; sourceTree = "<group>"; };
+		B98B9DD21EC17A6100C8DF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B98B9DD71EC17A6100C8DF53 /* TopisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98B9DDB1EC17A6100C8DF53 /* TopisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopisUITests.swift; sourceTree = "<group>"; };
+		B98B9DDD1EC17A6100C8DF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD96B930151636400114425 /* Pods-TopisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopisTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopisTests/Pods-TopisTests.release.xcconfig"; sourceTree = "<group>"; };
+		EE600C1673B36A5939F4D9A1 /* Pods-Topis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Topis.release.xcconfig"; path = "Pods/Target Support Files/Pods-Topis/Pods-Topis.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B98B9DB51EC17A6000C8DF53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFBB6876D2136B8D132CEEC /* Pods_Topis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98B9DC91EC17A6100C8DF53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057A9CA8AEFECF09C6E75F8A /* Pods_TopisTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98B9DD41EC17A6100C8DF53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7C1737FB15AD9F7BF505478 /* Pods_TopisUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21981FDA729C40408A21AD0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81DF01E652F841E4527E5B92 /* Pods_Topis.framework */,
+				8BDED02ADF71FDC06EF7CC37 /* Pods_TopisTests.framework */,
+				72C526F0B26DB0F1E0A3FB62 /* Pods_TopisUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B98B9DAF1EC17A6000C8DF53 = {
+			isa = PBXGroup;
+			children = (
+				B98B9DBA1EC17A6000C8DF53 /* Topis */,
+				B98B9DCF1EC17A6100C8DF53 /* TopisTests */,
+				B98B9DDA1EC17A6100C8DF53 /* TopisUITests */,
+				B98B9DB91EC17A6000C8DF53 /* Products */,
+				D9058FCBCAF296BFA8F447CC /* Pods */,
+				21981FDA729C40408A21AD0F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B98B9DB91EC17A6000C8DF53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B98B9DB81EC17A6000C8DF53 /* Topis.app */,
+				B98B9DCC1EC17A6100C8DF53 /* TopisTests.xctest */,
+				B98B9DD71EC17A6100C8DF53 /* TopisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B98B9DBA1EC17A6000C8DF53 /* Topis */ = {
+			isa = PBXGroup;
+			children = (
+				B98B9DE91EC17B1700C8DF53 /* Model */,
+				B98B9DEA1EC17B1700C8DF53 /* Resources */,
+				B98B9DEB1EC17B1700C8DF53 /* Utility */,
+				B98B9DEC1EC17B1700C8DF53 /* View */,
+				B98B9DED1EC17B1700C8DF53 /* ViewController */,
+				B98B9DBB1EC17A6000C8DF53 /* AppDelegate.swift */,
+				B98B9DBD1EC17A6000C8DF53 /* ViewController.swift */,
+				B98B9DBF1EC17A6000C8DF53 /* Main.storyboard */,
+				B98B9DC21EC17A6000C8DF53 /* Assets.xcassets */,
+				B98B9DC41EC17A6000C8DF53 /* LaunchScreen.storyboard */,
+				B98B9DC71EC17A6000C8DF53 /* Info.plist */,
+			);
+			path = Topis;
+			sourceTree = "<group>";
+		};
+		B98B9DCF1EC17A6100C8DF53 /* TopisTests */ = {
+			isa = PBXGroup;
+			children = (
+				B98B9DD01EC17A6100C8DF53 /* TopisTests.swift */,
+				B98B9DD21EC17A6100C8DF53 /* Info.plist */,
+			);
+			path = TopisTests;
+			sourceTree = "<group>";
+		};
+		B98B9DDA1EC17A6100C8DF53 /* TopisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B98B9DDB1EC17A6100C8DF53 /* TopisUITests.swift */,
+				B98B9DDD1EC17A6100C8DF53 /* Info.plist */,
+			);
+			path = TopisUITests;
+			sourceTree = "<group>";
+		};
+		B98B9DE91EC17B1700C8DF53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B98B9DEA1EC17B1700C8DF53 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B98B9DEB1EC17B1700C8DF53 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B98B9DEC1EC17B1700C8DF53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B98B9DED1EC17B1700C8DF53 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D9058FCBCAF296BFA8F447CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10267D1A9B30AFDA5F6CF946 /* Pods-Topis.debug.xcconfig */,
+				EE600C1673B36A5939F4D9A1 /* Pods-Topis.release.xcconfig */,
+				0D43899CB0CEF8029C38B263 /* Pods-TopisTests.debug.xcconfig */,
+				BFD96B930151636400114425 /* Pods-TopisTests.release.xcconfig */,
+				5B76E67032E7E8541C7CFAB9 /* Pods-TopisUITests.debug.xcconfig */,
+				2A87A74EF17B909A13206CA4 /* Pods-TopisUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B98B9DB71EC17A6000C8DF53 /* Topis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98B9DE01EC17A6100C8DF53 /* Build configuration list for PBXNativeTarget "Topis" */;
+			buildPhases = (
+				9F781119DE13ED671F120863 /* [CP] Check Pods Manifest.lock */,
+				B98B9DB41EC17A6000C8DF53 /* Sources */,
+				B98B9DB51EC17A6000C8DF53 /* Frameworks */,
+				B98B9DB61EC17A6000C8DF53 /* Resources */,
+				50C7AB3E51EADA2D90C4B177 /* [CP] Embed Pods Frameworks */,
+				FE04C561C313AC4E5CA57DF5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Topis;
+			productName = Topis;
+			productReference = B98B9DB81EC17A6000C8DF53 /* Topis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B98B9DCB1EC17A6100C8DF53 /* TopisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98B9DE31EC17A6100C8DF53 /* Build configuration list for PBXNativeTarget "TopisTests" */;
+			buildPhases = (
+				B5E647A253BE8AD9A4AB11F4 /* [CP] Check Pods Manifest.lock */,
+				B98B9DC81EC17A6100C8DF53 /* Sources */,
+				B98B9DC91EC17A6100C8DF53 /* Frameworks */,
+				B98B9DCA1EC17A6100C8DF53 /* Resources */,
+				12C99C500FABADDF9F502FF9 /* [CP] Embed Pods Frameworks */,
+				F9139A99354C48C584AFF26C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B98B9DCE1EC17A6100C8DF53 /* PBXTargetDependency */,
+			);
+			name = TopisTests;
+			productName = TopisTests;
+			productReference = B98B9DCC1EC17A6100C8DF53 /* TopisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B98B9DD61EC17A6100C8DF53 /* TopisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98B9DE61EC17A6100C8DF53 /* Build configuration list for PBXNativeTarget "TopisUITests" */;
+			buildPhases = (
+				FE7816C6A4DD72A47415F103 /* [CP] Check Pods Manifest.lock */,
+				B98B9DD31EC17A6100C8DF53 /* Sources */,
+				B98B9DD41EC17A6100C8DF53 /* Frameworks */,
+				B98B9DD51EC17A6100C8DF53 /* Resources */,
+				284D699B503E299025BB6115 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B98B9DD91EC17A6100C8DF53 /* PBXTargetDependency */,
+			);
+			name = TopisUITests;
+			productName = TopisUITests;
+			productReference = B98B9DD71EC17A6100C8DF53 /* TopisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B98B9DB01EC17A6000C8DF53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Dzung Nguyen";
+				TargetAttributes = {
+					B98B9DB71EC17A6000C8DF53 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = CB7BJM62E3;
+						ProvisioningStyle = Automatic;
+					};
+					B98B9DCB1EC17A6100C8DF53 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = CB7BJM62E3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B98B9DB71EC17A6000C8DF53;
+					};
+					B98B9DD61EC17A6100C8DF53 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = CB7BJM62E3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B98B9DB71EC17A6000C8DF53;
+					};
+				};
+			};
+			buildConfigurationList = B98B9DB31EC17A6000C8DF53 /* Build configuration list for PBXProject "Topis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B98B9DAF1EC17A6000C8DF53;
+			productRefGroup = B98B9DB91EC17A6000C8DF53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B98B9DB71EC17A6000C8DF53 /* Topis */,
+				B98B9DCB1EC17A6100C8DF53 /* TopisTests */,
+				B98B9DD61EC17A6100C8DF53 /* TopisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B98B9DB61EC17A6000C8DF53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98B9DC61EC17A6000C8DF53 /* LaunchScreen.storyboard in Resources */,
+				B98B9DC31EC17A6000C8DF53 /* Assets.xcassets in Resources */,
+				B98B9DC11EC17A6000C8DF53 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98B9DCA1EC17A6100C8DF53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98B9DD51EC17A6100C8DF53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12C99C500FABADDF9F502FF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopisTests/Pods-TopisTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		284D699B503E299025BB6115 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopisUITests/Pods-TopisUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50C7AB3E51EADA2D90C4B177 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Topis/Pods-Topis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F781119DE13ED671F120863 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B5E647A253BE8AD9A4AB11F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9139A99354C48C584AFF26C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopisTests/Pods-TopisTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE04C561C313AC4E5CA57DF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Topis/Pods-Topis-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE7816C6A4DD72A47415F103 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B98B9DB41EC17A6000C8DF53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98B9DBE1EC17A6000C8DF53 /* ViewController.swift in Sources */,
+				B98B9DBC1EC17A6000C8DF53 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98B9DC81EC17A6100C8DF53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98B9DD11EC17A6100C8DF53 /* TopisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98B9DD31EC17A6100C8DF53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98B9DDC1EC17A6100C8DF53 /* TopisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B98B9DCE1EC17A6100C8DF53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B98B9DB71EC17A6000C8DF53 /* Topis */;
+			targetProxy = B98B9DCD1EC17A6100C8DF53 /* PBXContainerItemProxy */;
+		};
+		B98B9DD91EC17A6100C8DF53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B98B9DB71EC17A6000C8DF53 /* Topis */;
+			targetProxy = B98B9DD81EC17A6100C8DF53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B98B9DBF1EC17A6000C8DF53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B98B9DC01EC17A6000C8DF53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B98B9DC41EC17A6000C8DF53 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B98B9DC51EC17A6000C8DF53 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B98B9DDE1EC17A6100C8DF53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B98B9DDF1EC17A6100C8DF53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B98B9DE11EC17A6100C8DF53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10267D1A9B30AFDA5F6CF946 /* Pods-Topis.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CB7BJM62E3;
+				INFOPLIST_FILE = Topis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dz.ios.Topis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B98B9DE21EC17A6100C8DF53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE600C1673B36A5939F4D9A1 /* Pods-Topis.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CB7BJM62E3;
+				INFOPLIST_FILE = Topis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dz.ios.Topis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B98B9DE41EC17A6100C8DF53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D43899CB0CEF8029C38B263 /* Pods-TopisTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CB7BJM62E3;
+				INFOPLIST_FILE = TopisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dz.ios.TopisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Topis.app/Topis";
+			};
+			name = Debug;
+		};
+		B98B9DE51EC17A6100C8DF53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD96B930151636400114425 /* Pods-TopisTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CB7BJM62E3;
+				INFOPLIST_FILE = TopisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dz.ios.TopisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Topis.app/Topis";
+			};
+			name = Release;
+		};
+		B98B9DE71EC17A6100C8DF53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B76E67032E7E8541C7CFAB9 /* Pods-TopisUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = CB7BJM62E3;
+				INFOPLIST_FILE = TopisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dz.ios.TopisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Topis;
+			};
+			name = Debug;
+		};
+		B98B9DE81EC17A6100C8DF53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A87A74EF17B909A13206CA4 /* Pods-TopisUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = CB7BJM62E3;
+				INFOPLIST_FILE = TopisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dz.ios.TopisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Topis;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B98B9DB31EC17A6000C8DF53 /* Build configuration list for PBXProject "Topis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98B9DDE1EC17A6100C8DF53 /* Debug */,
+				B98B9DDF1EC17A6100C8DF53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B98B9DE01EC17A6100C8DF53 /* Build configuration list for PBXNativeTarget "Topis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98B9DE11EC17A6100C8DF53 /* Debug */,
+				B98B9DE21EC17A6100C8DF53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B98B9DE31EC17A6100C8DF53 /* Build configuration list for PBXNativeTarget "TopisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98B9DE41EC17A6100C8DF53 /* Debug */,
+				B98B9DE51EC17A6100C8DF53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B98B9DE61EC17A6100C8DF53 /* Build configuration list for PBXNativeTarget "TopisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98B9DE71EC17A6100C8DF53 /* Debug */,
+				B98B9DE81EC17A6100C8DF53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B98B9DB01EC17A6000C8DF53 /* Project object */;
+}
