@@ -30,13 +30,10 @@ class TabBarController: UITabBarController {
         
         viewControllers?.append(nav)
         
-        nav.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "home_selected"), tag: 1)
-        
-        nav.tabBarItem.selectedImage = UIImage(named: "home")
-        
-        nav.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor(hex: 0x706F73), NSFontAttributeName: UIFont(name: GothamFontName.Book.rawValue, size: 12)!], for: .normal)
-        
-        nav.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor(hex: Constants.themeColor), NSFontAttributeName: UIFont(name: GothamFontName.Book.rawValue, size: 12)!], for: .selected)
+        nav.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "home"), tag: 1)
+
+        // set image center to tab bar
+        nav.tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
     }
     
     // MARK: Tab NewTopic
@@ -47,13 +44,10 @@ class TabBarController: UITabBarController {
         
         viewControllers?.append(nav)
         
-        nav.tabBarItem = UITabBarItem(title: "New", image: UIImage(named: "home"), tag: 1)
+        nav.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "add"), tag: 2)
         
-        nav.tabBarItem.selectedImage = UIImage(named: "home_selected")
-        
-        nav.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor(hex: 0x706F73), NSFontAttributeName: UIFont(name: GothamFontName.Book.rawValue, size: 12)!], for: .normal)
-        
-        nav.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor(hex: Constants.themeColor), NSFontAttributeName: UIFont(name: GothamFontName.Book.rawValue, size: 12)!], for: .selected)
+        // set image center to tab bar
+        nav.tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
     }
 }
 

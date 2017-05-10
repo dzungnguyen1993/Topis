@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="Topis" customModuleProvider="target">
             <connections>
+                <outlet property="contentView" destination="Jq2-86-hEL" id="cai-Xk-THd"/>
+                <outlet property="searchTextField" destination="UnK-mD-XRo" id="o2a-dE-PeQ"/>
+                <outlet property="topicTableView" destination="tBI-hj-JO1" id="Ymz-Yz-UPI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,18 +36,54 @@
                     </constraints>
                     <color key="barTintColor" red="1" green="0.58431372549019611" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <items>
-                        <navigationItem title="Title" id="Hhs-V4-mK3"/>
+                        <navigationItem id="Hhs-V4-mK3">
+                            <nil key="title"/>
+                            <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="UnK-mD-XRo">
+                                <rect key="frame" x="8" y="7" width="285" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <barButtonItem key="rightBarButtonItem" style="plain" id="Nsx-JV-sHf">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5zG-pZ-5AX">
+                                    <rect key="frame" x="299" y="7" width="60" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Cancel"/>
+                                </button>
+                            </barButtonItem>
+                        </navigationItem>
                     </items>
                 </navigationBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jq2-86-hEL">
+                    <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tBI-hj-JO1">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="tBI-hj-JO1" secondAttribute="trailing" id="CHj-9H-oMx"/>
+                        <constraint firstItem="tBI-hj-JO1" firstAttribute="leading" secondItem="Jq2-86-hEL" secondAttribute="leading" id="G01-BL-ig0"/>
+                        <constraint firstAttribute="bottom" secondItem="tBI-hj-JO1" secondAttribute="bottom" id="flZ-fZ-ZX0"/>
+                        <constraint firstItem="tBI-hj-JO1" firstAttribute="top" secondItem="Jq2-86-hEL" secondAttribute="top" id="hVd-TF-tSd"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Cbf-E2-Syx" secondAttribute="trailing" id="Fbs-bW-65q"/>
+                <constraint firstAttribute="trailing" secondItem="Jq2-86-hEL" secondAttribute="trailing" id="HcQ-fP-h33"/>
                 <constraint firstItem="6Tv-9X-cqh" firstAttribute="top" secondItem="Cbf-E2-Syx" secondAttribute="bottom" id="LUR-hv-67S"/>
                 <constraint firstItem="Cbf-E2-Syx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mkh-Wn-iI4"/>
                 <constraint firstAttribute="trailing" secondItem="6Tv-9X-cqh" secondAttribute="trailing" id="QVT-Lq-viz"/>
+                <constraint firstItem="Jq2-86-hEL" firstAttribute="top" secondItem="6Tv-9X-cqh" secondAttribute="bottom" id="XFA-Gk-pHh"/>
                 <constraint firstItem="Cbf-E2-Syx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nZP-ld-wSf"/>
                 <constraint firstItem="6Tv-9X-cqh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="o8G-xa-MVy"/>
+                <constraint firstAttribute="bottom" secondItem="Jq2-86-hEL" secondAttribute="bottom" constant="49" id="ol0-UA-1aN"/>
+                <constraint firstItem="Jq2-86-hEL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tYw-5H-bbN"/>
             </constraints>
             <point key="canvasLocation" x="25.5" y="52.5"/>
         </view>

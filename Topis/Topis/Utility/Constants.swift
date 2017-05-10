@@ -10,6 +10,7 @@ import Foundation
 
 struct Constants {
     struct Identifiers {
+        static let topicCell = "TopicCell"
     }
     
     struct ViewControllers {
