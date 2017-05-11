@@ -14,6 +14,7 @@ class TopicCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var constraintContentLabelHeight: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()

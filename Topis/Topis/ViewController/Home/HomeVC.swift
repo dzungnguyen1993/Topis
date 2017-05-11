@@ -20,6 +20,9 @@ class HomeVC: UIViewController {
 
         self.initSearchView()
         self.setupTableView()
+        
+        // set textField delegate
+        self.searchTextField.delegate = self
     }
     
     // MARK: Set-up Layout
@@ -53,18 +56,30 @@ extension HomeVC: UITableViewDataSource {
         cell.nameLabel.numberOfLines = 0
         cell.nameLabel.sizeToFit()
         
-        cell.contentLabel.text = "a\na\na a g awt \n"
+        cell.contentLabel.text = "a\na\na af valm"
+        
+//        let string = "a\na\na a g awt \n"
+//        let height = string.height(withConstrainedWidth: 320, font: UIFont(name: GothamFontName.Book.rawValue, size: 12)!)
+//        print(height)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 208
+        return 210
     }
 }
 
 extension HomeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+    }
+}
+
+// MARK: Search
+extension HomeVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

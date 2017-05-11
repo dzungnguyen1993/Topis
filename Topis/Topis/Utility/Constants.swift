@@ -19,4 +19,17 @@ struct Constants {
     }
     
     static let themeColor = 0xFF9532
+    static let grayTextColor = 0xB8B8B8
+    static let blackTextColor = 0x000000
+    
+    static let fakeJSON: String = {
+        let path = Bundle.main.path(forResource: "fakeJson", ofType: "txt")
+        var jsonString = ""
+        do {
+            try jsonString = String(contentsOfFile: path!, encoding: String.Encoding.utf8)
+        } catch {
+        
+        }
+        return jsonString
+    }()
 }

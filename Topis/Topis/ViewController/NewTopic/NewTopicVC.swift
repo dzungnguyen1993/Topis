@@ -10,26 +10,55 @@ import UIKit
 
 class NewTopicVC: UIViewController {
 
+    @IBOutlet weak var inputTextView: UITextView!
+    var isSetPlaceHolder: Bool = true
+    
+    let placeHolderText = "Share your thought!"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        inputTextView.delegate = self
+        
+        // set textview placeholder
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: Set Place Holder
+    func setPlaceHolderText() {
+        isSetPlaceHolder = true
+        inputTextView.text = placeHolderText
+        inputTextView.textColor = UIColor(hex: Constants.grayTextColor)
     }
-    */
+    
+    func removePlaceHolderText() {
+        isSetPlaceHolder = false
+        inputTextView.text = ""
+        inputTextView.textColor = UIColor(hex: Constants.blackTextColor)
+    }
 
+    // MARK: Actions
+    @IBAction func cancelPost(_ sender: UIButton) {
+        inputTextView.resignFirstResponder()
+    }
+    
+    @IBAction func postTopic(_ sender: UIButton) {
+        // do something here
+    }
+}
+
+// MARK: UITextViewDelegate
+extension NewTopicVC: UITextViewDelegate {
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+        if isSetPlaceHolder == true {
+            self.removePlaceHolderText()
+        }
+        
+        return true
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text == "" {
+            self.setPlaceHolderText()
+        }
+    }
 }
