@@ -16,6 +16,8 @@ struct Constants {
     struct ViewControllers {
         static let homeVC = "HomeVC"
         static let newTopicVC = "NewTopicVC"
+        static let detailsVC = "DetailsVC"
+        static let exploreVC = "ExploreVC"
     }
 
     static let fakeJSON: String = {
@@ -47,4 +49,6 @@ struct Constants {
     
     static let warningTitle = "Warning!"
     static let messageExceedContentLength = "Your content exceeds the maximum length (\(Constants.maximumTopicLength) characters)!"
+    
+    static let messageEnterNothing = "You didn't enter the content of your topic!"
 }

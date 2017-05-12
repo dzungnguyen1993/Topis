@@ -31,4 +31,10 @@ class BaseViewController: UIViewController {
         popup.addButton(buttonOne)
         self.present(popup, animated: true, completion: nil)
     }
+    
+    // MARK: Show Details
+    func showDetails(topic: Topic) {
+        let detailsVC = DetailsVC(nibName: Constants.ViewControllers.detailsVC, bundle: nil)
+        self.navigationController?.pushViewController(detailsVC, animated: true)
+    }
 }

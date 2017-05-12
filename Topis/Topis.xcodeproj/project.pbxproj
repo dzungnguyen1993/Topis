@@ -14,6 +14,14 @@
 		B90280FC1EC2FB3B0097E80B /* like-checked.png in Resources */ = {isa = PBXBuildFile; fileRef = B90280F71EC2FB3B0097E80B /* like-checked.png */; };
 		B90280FD1EC2FB3B0097E80B /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = B90280F81EC2FB3B0097E80B /* like.png */; };
 		B90280FF1EC306270097E80B /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B90280FE1EC306270097E80B /* avatar.jpg */; };
+		B92550391EC5AF0E0059A57A /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92550371EC5AF0E0059A57A /* ExploreVC.swift */; };
+		B925503A1EC5AF0E0059A57A /* ExploreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92550381EC5AF0E0059A57A /* ExploreVC.xib */; };
+		B925503D1EC5AF1B0059A57A /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925503B1EC5AF1B0059A57A /* DetailsVC.swift */; };
+		B925503E1EC5AF1B0059A57A /* DetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B925503C1EC5AF1B0059A57A /* DetailsVC.xib */; };
+		B92550401EC5B1140059A57A /* explore.png in Resources */ = {isa = PBXBuildFile; fileRef = B925503F1EC5B1140059A57A /* explore.png */; };
+		B92550441EC5BA7F0059A57A /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = B92550431EC5BA7F0059A57A /* back.png */; };
+		B92550461EC5C51A0059A57A /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92550451EC5C51A0059A57A /* DetailsView.swift */; };
+		B92550481EC5C5250059A57A /* DetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92550471EC5C5250059A57A /* DetailsView.xib */; };
 		B964F2121EC2C51400431FE6 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B964F2101EC2C51400431FE6 /* TopicCell.swift */; };
 		B964F2131EC2C51400431FE6 /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B964F2111EC2C51400431FE6 /* TopicCell.xib */; };
 		B987D0EB1EC1C47C003BFD23 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987D0EA1EC1C47C003BFD23 /* Utils.swift */; };
@@ -98,6 +106,14 @@
 		B90280F71EC2FB3B0097E80B /* like-checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like-checked.png"; sourceTree = "<group>"; };
 		B90280F81EC2FB3B0097E80B /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
 		B90280FE1EC306270097E80B /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
+		B92550371EC5AF0E0059A57A /* ExploreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
+		B92550381EC5AF0E0059A57A /* ExploreVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreVC.xib; sourceTree = "<group>"; };
+		B925503B1EC5AF1B0059A57A /* DetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		B925503C1EC5AF1B0059A57A /* DetailsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsVC.xib; sourceTree = "<group>"; };
+		B925503F1EC5B1140059A57A /* explore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explore.png; sourceTree = "<group>"; };
+		B92550431EC5BA7F0059A57A /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		B92550451EC5C51A0059A57A /* DetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		B92550471EC5C5250059A57A /* DetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsView.xib; sourceTree = "<group>"; };
 		B964F2101EC2C51400431FE6 /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		B964F2111EC2C51400431FE6 /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
 		B987D0EA1EC1C47C003BFD23 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -195,9 +211,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B92550351EC5AEDD0059A57A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				B925503B1EC5AF1B0059A57A /* DetailsVC.swift */,
+				B925503C1EC5AF1B0059A57A /* DetailsVC.xib */,
+				B92550451EC5C51A0059A57A /* DetailsView.swift */,
+				B92550471EC5C5250059A57A /* DetailsView.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		B92550361EC5AEDD0059A57A /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				B92550371EC5AF0E0059A57A /* ExploreVC.swift */,
+				B92550381EC5AF0E0059A57A /* ExploreVC.xib */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
 		B987D0F41EC1C7D7003BFD23 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B92550431EC5BA7F0059A57A /* back.png */,
+				B925503F1EC5B1140059A57A /* explore.png */,
 				B9AD517D1EC457A4000FE602 /* avatar2.jpg */,
 				B90280FE1EC306270097E80B /* avatar.jpg */,
 				B90280F41EC2FB3B0097E80B /* comment.png */,
@@ -314,6 +352,8 @@
 		B98B9DED1EC17B1700C8DF53 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B92550351EC5AEDD0059A57A /* Details */,
+				B92550361EC5AEDD0059A57A /* Explore */,
 				B99AC5FE1EC1D4BA00661294 /* NewTopic */,
 				B99AC5F91EC1D4AA00661294 /* Home */,
 				B98B9DEE1EC17F5300C8DF53 /* TabBarController.swift */,
@@ -511,6 +551,7 @@
 				B9B51CB01EC22A48001AED2B /* search.png in Resources */,
 				B99AC5FD1EC1D4AA00661294 /* HomeVC.xib in Resources */,
 				B98B9DC61EC17A6000C8DF53 /* LaunchScreen.storyboard in Resources */,
+				B925503A1EC5AF0E0059A57A /* ExploreVC.xib in Resources */,
 				B99AC5F31EC1D12E00661294 /* home.png in Resources */,
 				B98B9E0E1EC183AA00C8DF53 /* Gotham-Medium.otf in Resources */,
 				B98B9E081EC183AA00C8DF53 /* Gotham-Bold.otf in Resources */,
@@ -519,13 +560,17 @@
 				B98B9E151EC183AA00C8DF53 /* Gotham-XLightIta.otf in Resources */,
 				B98B9E141EC183AA00C8DF53 /* Gotham-XLight.otf in Resources */,
 				B9AD517E1EC457A4000FE602 /* avatar2.jpg in Resources */,
+				B92550401EC5B1140059A57A /* explore.png in Resources */,
 				B99AC6021EC1D4CE00661294 /* NewTopicVC.xib in Resources */,
+				B92550441EC5BA7F0059A57A /* back.png in Resources */,
 				B90280F91EC2FB3B0097E80B /* comment.png in Resources */,
 				B98B9E0F1EC183AA00C8DF53 /* Gotham-MediumIta.otf in Resources */,
 				B98B9E131EC183AA00C8DF53 /* Gotham-UltraIta.otf in Resources */,
+				B925503E1EC5AF1B0059A57A /* DetailsVC.xib in Resources */,
 				B98B9E101EC183AA00C8DF53 /* Gotham-Thin.otf in Resources */,
 				B98B9E111EC183AA00C8DF53 /* Gotham-ThinIta.otf in Resources */,
 				B98B9E061EC183AA00C8DF53 /* Gotham-Black.otf in Resources */,
+				B92550481EC5C5250059A57A /* DetailsView.xib in Resources */,
 				B98B9E161EC183AA00C8DF53 /* JetExplorer.ttf in Resources */,
 				B964F2131EC2C51400431FE6 /* TopicCell.xib in Resources */,
 				B9B51CAB1EC223B4001AED2B /* add_selected.png in Resources */,
@@ -692,6 +737,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B98B9DEF1EC17F5300C8DF53 /* TabBarController.swift in Sources */,
+				B92550461EC5C51A0059A57A /* DetailsView.swift in Sources */,
 				B9AD51821EC4591C000FE602 /* DataManager.swift in Sources */,
 				B99AC5FC1EC1D4AA00661294 /* HomeVC.swift in Sources */,
 				B9A49D291EC423F7008091A7 /* Topic.swift in Sources */,
@@ -704,7 +750,9 @@
 				B987D0F31EC1C572003BFD23 /* GothamFontName.swift in Sources */,
 				B964F2121EC2C51400431FE6 /* TopicCell.swift in Sources */,
 				B9AD51801EC4583C000FE602 /* TopicList.swift in Sources */,
+				B925503D1EC5AF1B0059A57A /* DetailsVC.swift in Sources */,
 				B9B2C1DB1EC5629E00ED4877 /* BaseViewController.swift in Sources */,
+				B92550391EC5AF0E0059A57A /* ExploreVC.swift in Sources */,
 				B9A49D271EC423E6008091A7 /* User.swift in Sources */,
 				B99AC6011EC1D4CE00661294 /* NewTopicVC.swift in Sources */,
 			);

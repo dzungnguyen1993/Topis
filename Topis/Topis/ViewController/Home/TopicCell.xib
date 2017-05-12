@@ -11,8 +11,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </array>
         <array key="Gotham-Light.otf">
             <string>Gotham-Light</string>
+        </array>
+        <array key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
         </array>
     </customFonts>
     <objects>
@@ -36,16 +42,16 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFm-pf-ABk">
-                                <rect key="frame" x="8" y="66" width="307" height="15"/>
+                                <rect key="frame" x="8" y="74" width="307" height="15"/>
                                 <fontDescription key="fontDescription" name="Gotham-Light" family="Gotham" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cO9-90-TrY">
-                                <rect key="frame" x="8" y="161.5" width="307" height="32"/>
+                                <rect key="frame" x="8" y="158.5" width="307" height="35"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXy-uB-cfk">
-                                        <rect key="frame" x="0.0" y="2" width="102.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="5" width="102.5" height="30"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like.png" translatesAutoresizingMaskIntoConstraints="NO" id="di4-tD-Rzn">
                                                 <rect key="frame" x="2" y="2" width="26" height="26"/>
@@ -53,33 +59,49 @@
                                                     <constraint firstAttribute="width" secondItem="di4-tD-Rzn" secondAttribute="height" multiplier="1:1" id="W0Z-kE-DQJ"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHF-IB-bid">
+                                                <rect key="frame" x="36" y="7" width="46.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.58431372550000005" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="XHF-IB-bid" firstAttribute="leading" secondItem="di4-tD-Rzn" secondAttribute="trailing" constant="8" id="4Pn-bI-uvT"/>
                                             <constraint firstAttribute="bottom" secondItem="di4-tD-Rzn" secondAttribute="bottom" constant="2" id="TSZ-QH-4u2"/>
                                             <constraint firstItem="di4-tD-Rzn" firstAttribute="leading" secondItem="dXy-uB-cfk" secondAttribute="leading" constant="2" id="Til-y1-M7n"/>
+                                            <constraint firstItem="XHF-IB-bid" firstAttribute="centerY" secondItem="dXy-uB-cfk" secondAttribute="centerY" id="cCL-wr-bty"/>
                                             <constraint firstItem="di4-tD-Rzn" firstAttribute="top" secondItem="dXy-uB-cfk" secondAttribute="top" constant="2" id="efK-i1-nUM"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azX-Ta-pQ1">
-                                        <rect key="frame" x="102.5" y="2" width="102.5" height="30"/>
+                                        <rect key="frame" x="102.5" y="5" width="102.5" height="30"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dislike-checked.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zd8-dN-SdU">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dislike.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zd8-dN-SdU">
                                                 <rect key="frame" x="2" y="2" width="26" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Zd8-dN-SdU" secondAttribute="height" multiplier="1:1" id="erd-NZ-zRy"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6l-qd-r0N">
+                                                <rect key="frame" x="36" y="7" width="46.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.58431372550000005" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="Zd8-dN-SdU" firstAttribute="leading" secondItem="azX-Ta-pQ1" secondAttribute="leading" constant="2" id="50k-Ml-93f"/>
                                             <constraint firstItem="Zd8-dN-SdU" firstAttribute="top" secondItem="azX-Ta-pQ1" secondAttribute="top" constant="2" id="S2d-84-tYC"/>
                                             <constraint firstAttribute="bottom" secondItem="Zd8-dN-SdU" secondAttribute="bottom" constant="2" id="Sic-tN-zx3"/>
+                                            <constraint firstItem="K6l-qd-r0N" firstAttribute="centerY" secondItem="azX-Ta-pQ1" secondAttribute="centerY" id="aYU-ev-d9F"/>
+                                            <constraint firstItem="K6l-qd-r0N" firstAttribute="leading" secondItem="Zd8-dN-SdU" secondAttribute="trailing" constant="8" id="dco-8h-vcT"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYG-WY-2Iy">
-                                        <rect key="frame" x="205" y="2" width="102" height="30"/>
+                                        <rect key="frame" x="205" y="5" width="102" height="30"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment.png" translatesAutoresizingMaskIntoConstraints="NO" id="O3b-gm-2h4">
                                                 <rect key="frame" x="2" y="2" width="26" height="26"/>
@@ -87,12 +109,20 @@
                                                     <constraint firstAttribute="width" secondItem="O3b-gm-2h4" secondAttribute="height" multiplier="1:1" id="tjZ-Np-zne"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oti-nR-kXE">
+                                                <rect key="frame" x="36" y="7" width="46.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.58431372550000005" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="O3b-gm-2h4" firstAttribute="top" secondItem="DYG-WY-2Iy" secondAttribute="top" constant="2" id="0Rf-FL-fW4"/>
                                             <constraint firstItem="O3b-gm-2h4" firstAttribute="leading" secondItem="DYG-WY-2Iy" secondAttribute="leading" constant="2" id="FFq-mT-Qqn"/>
+                                            <constraint firstItem="oti-nR-kXE" firstAttribute="leading" secondItem="O3b-gm-2h4" secondAttribute="trailing" constant="8" id="jvd-7o-0nM"/>
                                             <constraint firstAttribute="bottom" secondItem="O3b-gm-2h4" secondAttribute="bottom" constant="2" id="u24-Ep-hKN"/>
+                                            <constraint firstItem="oti-nR-kXE" firstAttribute="centerY" secondItem="DYG-WY-2Iy" secondAttribute="centerY" id="wNC-Y5-AWG"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sft-bt-etr">
@@ -109,22 +139,28 @@
                                     <constraint firstItem="Sft-bt-etr" firstAttribute="leading" secondItem="cO9-90-TrY" secondAttribute="leading" id="BbY-xX-iNd"/>
                                     <constraint firstItem="azX-Ta-pQ1" firstAttribute="leading" secondItem="dXy-uB-cfk" secondAttribute="trailing" id="NeG-34-grV"/>
                                     <constraint firstAttribute="trailing" secondItem="Sft-bt-etr" secondAttribute="trailing" id="Qm2-Uh-x7k"/>
-                                    <constraint firstItem="dXy-uB-cfk" firstAttribute="top" secondItem="cO9-90-TrY" secondAttribute="top" constant="2" id="RZp-R7-p3A"/>
+                                    <constraint firstItem="dXy-uB-cfk" firstAttribute="top" secondItem="cO9-90-TrY" secondAttribute="top" constant="5" id="RZp-R7-p3A"/>
                                     <constraint firstAttribute="bottom" secondItem="DYG-WY-2Iy" secondAttribute="bottom" id="RrB-f1-RNH"/>
                                     <constraint firstItem="DYG-WY-2Iy" firstAttribute="leading" secondItem="azX-Ta-pQ1" secondAttribute="trailing" id="UwX-7P-RLi"/>
-                                    <constraint firstItem="azX-Ta-pQ1" firstAttribute="top" secondItem="cO9-90-TrY" secondAttribute="top" constant="2" id="amq-GG-oeL"/>
+                                    <constraint firstItem="azX-Ta-pQ1" firstAttribute="top" secondItem="cO9-90-TrY" secondAttribute="top" constant="5" id="amq-GG-oeL"/>
                                     <constraint firstAttribute="trailing" secondItem="DYG-WY-2Iy" secondAttribute="trailing" id="eFs-Sr-Xfm"/>
                                     <constraint firstItem="dXy-uB-cfk" firstAttribute="width" secondItem="cO9-90-TrY" secondAttribute="width" multiplier="1:3" id="ez5-ub-AZr"/>
                                     <constraint firstAttribute="bottom" secondItem="azX-Ta-pQ1" secondAttribute="bottom" id="iD6-LY-nny"/>
                                     <constraint firstItem="dXy-uB-cfk" firstAttribute="leading" secondItem="cO9-90-TrY" secondAttribute="leading" id="l4y-xC-j6H"/>
-                                    <constraint firstItem="DYG-WY-2Iy" firstAttribute="top" secondItem="cO9-90-TrY" secondAttribute="top" constant="2" id="nkI-oC-bME"/>
+                                    <constraint firstItem="DYG-WY-2Iy" firstAttribute="top" secondItem="cO9-90-TrY" secondAttribute="top" constant="5" id="nkI-oC-bME"/>
                                     <constraint firstItem="Sft-bt-etr" firstAttribute="top" secondItem="cO9-90-TrY" secondAttribute="top" id="qZX-T8-P36"/>
-                                    <constraint firstAttribute="height" constant="32" id="s0n-1Q-YL1"/>
+                                    <constraint firstAttribute="height" constant="35" id="s0n-1Q-YL1"/>
                                     <constraint firstItem="azX-Ta-pQ1" firstAttribute="width" secondItem="cO9-90-TrY" secondAttribute="width" multiplier="1:3" id="ygS-19-2di"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sms-uE-QQq">
-                                <rect key="frame" x="66" y="8" width="249" height="21"/>
+                                <rect key="frame" x="66" y="8" width="249" height="17"/>
+                                <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttY-VD-04r">
+                                <rect key="frame" x="66" y="37" width="249" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -134,15 +170,18 @@
                         <constraints>
                             <constraint firstItem="9FQ-9Y-qLH" firstAttribute="leading" secondItem="Tne-43-lch" secondAttribute="leading" constant="8" id="97d-Mf-EXj"/>
                             <constraint firstItem="cO9-90-TrY" firstAttribute="leading" secondItem="Tne-43-lch" secondAttribute="leading" constant="8" id="BxG-w4-AVJ"/>
+                            <constraint firstItem="ttY-VD-04r" firstAttribute="leading" secondItem="9FQ-9Y-qLH" secondAttribute="trailing" constant="8" id="Cwt-af-kh0"/>
                             <constraint firstAttribute="trailing" secondItem="hFm-pf-ABk" secondAttribute="trailing" constant="8" id="Iug-qo-uZu"/>
                             <constraint firstAttribute="trailing" secondItem="sms-uE-QQq" secondAttribute="trailing" constant="8" id="Lri-bK-RZ5"/>
                             <constraint firstItem="hFm-pf-ABk" firstAttribute="leading" secondItem="Tne-43-lch" secondAttribute="leading" constant="8" id="QZU-Or-IX8"/>
+                            <constraint firstItem="ttY-VD-04r" firstAttribute="bottom" secondItem="9FQ-9Y-qLH" secondAttribute="bottom" id="TzF-8N-rDW"/>
                             <constraint firstItem="sms-uE-QQq" firstAttribute="top" secondItem="Tne-43-lch" secondAttribute="top" constant="8" id="U7T-Sy-eQ6"/>
                             <constraint firstAttribute="trailing" secondItem="cO9-90-TrY" secondAttribute="trailing" constant="8" id="UgK-7v-3fi"/>
                             <constraint firstItem="9FQ-9Y-qLH" firstAttribute="top" secondItem="Tne-43-lch" secondAttribute="top" constant="8" id="YLS-Zp-wKD"/>
+                            <constraint firstAttribute="trailing" secondItem="ttY-VD-04r" secondAttribute="trailing" constant="8" id="k40-D2-4LB"/>
                             <constraint firstItem="sms-uE-QQq" firstAttribute="leading" secondItem="9FQ-9Y-qLH" secondAttribute="trailing" constant="8" id="oLe-vo-hRb"/>
                             <constraint firstAttribute="bottom" secondItem="cO9-90-TrY" secondAttribute="bottom" constant="8" id="s1c-fv-cgF"/>
-                            <constraint firstItem="hFm-pf-ABk" firstAttribute="top" secondItem="9FQ-9Y-qLH" secondAttribute="bottom" constant="8" id="tDT-1w-gYr"/>
+                            <constraint firstItem="hFm-pf-ABk" firstAttribute="top" secondItem="9FQ-9Y-qLH" secondAttribute="bottom" constant="16" id="tDT-1w-gYr"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWd-WB-ck1">
@@ -166,16 +205,23 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="avatarImgView" destination="9FQ-9Y-qLH" id="DyY-Jb-TiC"/>
+                <outlet property="commentLabel" destination="oti-nR-kXE" id="XnX-1d-0rE"/>
+                <outlet property="commentView" destination="DYG-WY-2Iy" id="Lur-83-C7y"/>
                 <outlet property="containerView" destination="Tne-43-lch" id="jP3-Ap-tgc"/>
                 <outlet property="contentLabel" destination="hFm-pf-ABk" id="fH2-RT-eJN"/>
+                <outlet property="downLabel" destination="K6l-qd-r0N" id="GLo-sh-ELF"/>
+                <outlet property="downvoteView" destination="azX-Ta-pQ1" id="f3l-BM-sJ8"/>
                 <outlet property="nameLabel" destination="sms-uE-QQq" id="SWG-4v-aMe"/>
+                <outlet property="titleLabel" destination="ttY-VD-04r" id="Cxa-mL-MjU"/>
+                <outlet property="upLabel" destination="XHF-IB-bid" id="sIA-lD-yzq"/>
+                <outlet property="upvoteView" destination="dXy-uB-cfk" id="47K-Ie-7IM"/>
             </connections>
             <point key="canvasLocation" x="26.5" y="129"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="comment.png" width="60" height="60"/>
-        <image name="dislike-checked.png" width="90" height="90"/>
+        <image name="dislike.png" width="90" height="90"/>
         <image name="like.png" width="90" height="90"/>
     </resources>
 </document>

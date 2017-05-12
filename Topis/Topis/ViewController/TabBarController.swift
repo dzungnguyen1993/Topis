@@ -20,31 +20,40 @@ class TabBarController: UITabBarController {
         
         self.addTabHome()
         self.addTabNewTopic()
+        self.addTabExplore()
     }
     
     // MARK: Tab Home
     func addTabHome() {
         let vc = HomeVC(nibName: Constants.ViewControllers.homeVC, bundle: nil)
-        let nav = UINavigationController(rootViewController: vc)
-        nav.setNavigationBarHidden(true, animated: true)
+        let image = UIImage(named: "home")
         
-        viewControllers?.append(nav)
-        
-        nav.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "home"), tag: 1)
-
-        // set image center to tab bar
-        nav.tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        self.addTab(withViewController: vc, image: image!)
     }
     
     // MARK: Tab NewTopic
     func addTabNewTopic() {
         let vc = NewTopicVC(nibName: Constants.ViewControllers.newTopicVC, bundle: nil)
+        let image = UIImage(named: "add")
+
+        self.addTab(withViewController: vc, image: image!)
+    }
+    
+    // MARK: Tab Explore
+    func addTabExplore() {
+        let vc = ExploreVC(nibName: Constants.ViewControllers.exploreVC, bundle: nil)
+        let image = UIImage(named: "explore")
+        
+        self.addTab(withViewController: vc, image: image!)
+    }
+    
+    func addTab(withViewController vc: UIViewController, image: UIImage) {
         let nav = UINavigationController(rootViewController: vc)
         nav.setNavigationBarHidden(true, animated: true)
         
         viewControllers?.append(nav)
         
-        nav.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "add"), tag: 2)
+        nav.tabBarItem = UITabBarItem(title: "", image: image, tag: 2)
         
         // set image center to tab bar
         nav.tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)

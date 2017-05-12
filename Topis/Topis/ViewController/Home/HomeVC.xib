@@ -14,7 +14,6 @@
                 <outlet property="contentView" destination="Jq2-86-hEL" id="cai-Xk-THd"/>
                 <outlet property="navigationBar" destination="6Tv-9X-cqh" id="Ixa-iO-02T"/>
                 <outlet property="searchNavigationItem" destination="Hhs-V4-mK3" id="vaj-xK-tAq"/>
-                <outlet property="searchTextField" destination="UnK-mD-XRo" id="o2a-dE-PeQ"/>
                 <outlet property="topicTableView" destination="tBI-hj-JO1" id="Ymz-Yz-UPI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -37,17 +36,11 @@
                         <constraint firstAttribute="height" constant="44" id="6Y4-jZ-s8C"/>
                     </constraints>
                     <color key="barTintColor" red="1" green="0.58431372549019611" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </textAttributes>
                     <items>
-                        <navigationItem id="Hhs-V4-mK3">
-                            <nil key="title"/>
-                            <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" id="UnK-mD-XRo">
-                                <rect key="frame" x="8" y="7" width="304" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </navigationItem>
+                        <navigationItem title="Topis" id="Hhs-V4-mK3"/>
                     </items>
                 </navigationBar>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jq2-86-hEL">
