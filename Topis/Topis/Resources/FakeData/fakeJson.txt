@@ -2,7 +2,7 @@
    "topics":[  
       {  
          "id":"aba1",
-         "content":"This is a new topic",
+         "content":"This is a new topic \n a \n b \n c",
          "postedDate":1494488737,
          "owner":{  
             "id":"1",
@@ -15,7 +15,7 @@
 
 	{  
          "id":"aba2",
-         "content":"Today I'm gonna tell you this.",
+         "content":"Today I'm gonna tell you this.\nasg \n fuck",
          "postedDate":1494488819,
          "owner":{  
             "id":"2",

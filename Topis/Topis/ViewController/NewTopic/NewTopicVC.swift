@@ -8,19 +8,26 @@
 
 import UIKit
 
-class NewTopicVC: UIViewController {
+class NewTopicVC: BaseViewController {
 
     @IBOutlet weak var inputTextView: UITextView!
     var isSetPlaceHolder: Bool = true
     
     let placeHolderText = "Share your thought!"
     
+    var currentUser: User!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         inputTextView.delegate = self
         
-        // set textview placeholder
+        self.currentUser = self.appDelegate.currentUser
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.setPlaceHolderText()
+        self.inputTextView.becomeFirstResponder()
     }
     
     // MARK: Set Place Holder
@@ -38,11 +45,29 @@ class NewTopicVC: UIViewController {
 
     // MARK: Actions
     @IBAction func cancelPost(_ sender: UIButton) {
-        inputTextView.resignFirstResponder()
+        self.tabBarController?.selectedIndex = 0
     }
     
     @IBAction func postTopic(_ sender: UIButton) {
-        // do something here
+        // post new topic
+        let topic = Topic()
+        topic.id = Utils.createNewUUID()
+        topic.content = inputTextView.text
+        topic.owner = currentUser
+        topic.postedDate = Date()
+        
+        self.appDelegate.listTopic.append(topic)
+        
+        // reset
+        self.reset()
+        
+        // jump to tab home
+        self.tabBarController?.selectedIndex = 0
+    }
+    
+    func reset() {
+        inputTextView.resignFirstResponder()
+        inputTextView.text = ""
     }
 }
 
@@ -60,5 +85,16 @@ extension NewTopicVC: UITextViewDelegate {
         if textView.text == "" {
             self.setPlaceHolderText()
         }
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        let isValidLength = textView.text.characters.count + (text.characters.count - range.length) <= Constants.maximumTopicLength
+        
+        if isValidLength == false {
+            // show alert here
+            self.showAlert(withTitle: Constants.warningTitle, message: Constants.messageExceedContentLength)
+        }
+        
+        return isValidLength
     }
 }

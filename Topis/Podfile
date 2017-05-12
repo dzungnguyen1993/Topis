@@ -8,6 +8,7 @@ target 'Topis' do
   # Pods for Topis
 
 pod 'ObjectMapper'
+pod 'PopupDialog'
 
   target 'TopisTests' do
     inherit! :search_paths

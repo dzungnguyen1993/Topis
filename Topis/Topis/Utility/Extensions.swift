@@ -29,4 +29,16 @@ extension String {
         
         return boundingBox.height
     }
+    
+    func heightWithLineBreak(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
+        let strings = self.components(separatedBy: "\n")
+        
+        var totalHeight: CGFloat = 0
+        for string in strings {
+            let lineHeight = string.height(withConstrainedWidth: width, font: font)
+            totalHeight += lineHeight
+        }
+        
+        return totalHeight
+    }
 }

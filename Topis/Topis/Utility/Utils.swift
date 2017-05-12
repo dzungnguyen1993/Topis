@@ -9,5 +9,11 @@
 import UIKit
 
 class Utils {
-
+    static func createNewUUID() -> String {
+        return UUID().uuidString
+    }
+    
+    static func appDelegate() -> AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
 }

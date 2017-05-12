@@ -24,8 +24,8 @@ class TopicCell: UITableViewCell {
         self.containerView.layer.borderWidth = 1.0
         
         // round avatar image
-        avatarImgView.layer.cornerRadius = avatarImgView.bounds.size.width / 2
-        avatarImgView.layer.masksToBounds = true
+//        avatarImgView.layer.cornerRadius = avatarImgView.bounds.size.width / 2
+//        avatarImgView.layer.masksToBounds = true
         
         // set label alignment
         nameLabel.textAlignment = .left

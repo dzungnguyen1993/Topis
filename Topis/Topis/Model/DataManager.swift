@@ -26,4 +26,16 @@ class DataManager: NSObject {
         
         return topics!.listTopics
     }
+    
+    func getCurrentUser() -> User {
+        let jsonString = Constants.fakeUserJSON
+        
+        let user = User(JSONString: jsonString)
+        
+        guard user != nil else {
+            return User()
+        }
+        
+        return user!
+    }
 }

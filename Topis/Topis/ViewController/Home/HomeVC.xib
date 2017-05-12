@@ -12,6 +12,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="Topis" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="Jq2-86-hEL" id="cai-Xk-THd"/>
+                <outlet property="navigationBar" destination="6Tv-9X-cqh" id="Ixa-iO-02T"/>
+                <outlet property="searchNavigationItem" destination="Hhs-V4-mK3" id="vaj-xK-tAq"/>
                 <outlet property="searchTextField" destination="UnK-mD-XRo" id="o2a-dE-PeQ"/>
                 <outlet property="topicTableView" destination="tBI-hj-JO1" id="Ymz-Yz-UPI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -38,20 +40,13 @@
                     <items>
                         <navigationItem id="Hhs-V4-mK3">
                             <nil key="title"/>
-                            <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="UnK-mD-XRo">
-                                <rect key="frame" x="8" y="7" width="230" height="30"/>
+                            <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" id="UnK-mD-XRo">
+                                <rect key="frame" x="8" y="7" width="304" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <barButtonItem key="rightBarButtonItem" style="plain" id="Nsx-JV-sHf">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5zG-pZ-5AX">
-                                    <rect key="frame" x="244" y="7" width="60" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Cancel"/>
-                                </button>
-                            </barButtonItem>
                         </navigationItem>
                     </items>
                 </navigationBar>
@@ -85,7 +80,7 @@
                 <constraint firstAttribute="bottom" secondItem="Jq2-86-hEL" secondAttribute="bottom" constant="49" id="ol0-UA-1aN"/>
                 <constraint firstItem="Jq2-86-hEL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tYw-5H-bbN"/>
             </constraints>
-            <point key="canvasLocation" x="25.5" y="52.5"/>
+            <point key="canvasLocation" x="25" y="52"/>
         </view>
     </objects>
 </document>
