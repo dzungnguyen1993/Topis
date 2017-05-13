@@ -71,6 +71,8 @@
 		B9B51CAB1EC223B4001AED2B /* add_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B51CA91EC223B4001AED2B /* add_selected.png */; };
 		B9B51CAC1EC223B4001AED2B /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B51CAA1EC223B4001AED2B /* add.png */; };
 		B9B51CB01EC22A48001AED2B /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B51CAF1EC22A48001AED2B /* search.png */; };
+		B9EEA8C51EC616A900631BFB /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EEA8C31EC616A900631BFB /* CommentCell.swift */; };
+		B9EEA8C61EC616A900631BFB /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9EEA8C41EC616A900631BFB /* CommentCell.xib */; };
 		EDFBB6876D2136B8D132CEEC /* Pods_Topis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DF01E652F841E4527E5B92 /* Pods_Topis.framework */; };
 		F7C1737FB15AD9F7BF505478 /* Pods_TopisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C526F0B26DB0F1E0A3FB62 /* Pods_TopisUITests.framework */; };
 /* End PBXBuildFile section */
@@ -169,6 +171,8 @@
 		B9B51CA91EC223B4001AED2B /* add_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_selected.png; sourceTree = "<group>"; };
 		B9B51CAA1EC223B4001AED2B /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		B9B51CAF1EC22A48001AED2B /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		B9EEA8C31EC616A900631BFB /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		B9EEA8C41EC616A900631BFB /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		BFD96B930151636400114425 /* Pods-TopisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopisTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopisTests/Pods-TopisTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE600C1673B36A5939F4D9A1 /* Pods-Topis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Topis.release.xcconfig"; path = "Pods/Target Support Files/Pods-Topis/Pods-Topis.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +218,7 @@
 		B92550351EC5AEDD0059A57A /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				B9EEA8C21EC6168800631BFB /* Comments */,
 				B925503B1EC5AF1B0059A57A /* DetailsVC.swift */,
 				B925503C1EC5AF1B0059A57A /* DetailsVC.xib */,
 				B92550451EC5C51A0059A57A /* DetailsView.swift */,
@@ -416,6 +421,15 @@
 			path = FakeData;
 			sourceTree = "<group>";
 		};
+		B9EEA8C21EC6168800631BFB /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				B9EEA8C31EC616A900631BFB /* CommentCell.swift */,
+				B9EEA8C41EC616A900631BFB /* CommentCell.xib */,
+			);
+			name = Comments;
+			sourceTree = "<group>";
+		};
 		D9058FCBCAF296BFA8F447CC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -558,6 +572,7 @@
 				B90280FB1EC2FB3B0097E80B /* dislike.png in Resources */,
 				B98B9DC31EC17A6000C8DF53 /* Assets.xcassets in Resources */,
 				B98B9E151EC183AA00C8DF53 /* Gotham-XLightIta.otf in Resources */,
+				B9EEA8C61EC616A900631BFB /* CommentCell.xib in Resources */,
 				B98B9E141EC183AA00C8DF53 /* Gotham-XLight.otf in Resources */,
 				B9AD517E1EC457A4000FE602 /* avatar2.jpg in Resources */,
 				B92550401EC5B1140059A57A /* explore.png in Resources */,
@@ -751,6 +766,7 @@
 				B964F2121EC2C51400431FE6 /* TopicCell.swift in Sources */,
 				B9AD51801EC4583C000FE602 /* TopicList.swift in Sources */,
 				B925503D1EC5AF1B0059A57A /* DetailsVC.swift in Sources */,
+				B9EEA8C51EC616A900631BFB /* CommentCell.swift in Sources */,
 				B9B2C1DB1EC5629E00ED4877 /* BaseViewController.swift in Sources */,
 				B92550391EC5AF0E0059A57A /* ExploreVC.swift in Sources */,
 				B9A49D271EC423E6008091A7 /* User.swift in Sources */,

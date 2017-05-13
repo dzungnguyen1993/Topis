@@ -2,7 +2,7 @@
    "topics":[  
       {  
          "id":"aba1",
-        "title":"Topic 1",
+         "title":"Topic 1",
          "content":"This is a new topic \n a \n b \n c",
          "postedDate":1494488737,
          "owner":{  
@@ -11,12 +11,111 @@
             "avatar":"avatar.jpg"
          },
          "comments":[  
+            {  
+               "id":"1",
+               "content":"comment 1 \n dz \n dep",
+               "owner":{  
+                  "id":"2",
+                  "name":"Thanh-Dung",
+                  "avatar":"avatar2.jpg"
+               },
+               "postedDate":1494488737
+            },
+            {  
+               "id":"2",
+               "content":"comment 2",
+               "owner":{  
+                  "id":"2",
+                  "name":"Thanh-Dung",
+                  "avatar":"avatar2.jpg"
+               },
+               "postedDate":1494488737
+            },
+            {  
+               "id":"3",
+               "content":"comment 3",
+               "owner":{  
+                  "id":"2",
+                  "name":"Thanh-Dung",
+                  "avatar":"avatar2.jpg"
+               },
+               "postedDate":1494488737
+            },
+            {  
+               "id":"4",
+               "content":"comment 4",
+               "owner":{  
+                  "id":"2",
+                  "name":"Thanh-Dung",
+                  "avatar":"avatar2.jpg"
+               },
+               "postedDate":1494488737
+            },
+            {  
+               "id":"1",
+               "content":"comment 1 \n dz \n dep",
+               "owner":{  
+                  "id":"2",
+                  "name":"Thanh-Dung",
+                  "avatar":"avatar2.jpg"
+               },
+               "postedDate":1494488737
+            },
+            {  
+               "id":"1",
+               "content":"comment 1 \n dz \n dep",
+               "owner":{  
+                  "id":"2",
+                  "name":"Thanh-Dung",
+                  "avatar":"avatar2.jpg"
+               },
+               "postedDate":1494488737
+            },
+            {  
+               "id":"1",
+               "content":"comment 1 \n dz \n dep",
+               "owner":{  
+                  "id":"2",
+                  "name":"Thanh-Dung",
+                  "avatar":"avatar2.jpg"
+               },
+               "postedDate":1494488737
+            },
+            {  
+               "id":"1",
+               "content":"comment 1 \n dz \n dep",
+               "owner":{  
+                  "id":"2",
+                  "name":"Thanh-Dung",
+                  "avatar":"avatar2.jpg"
+               },
+               "postedDate":1494488737
+            },
+            {  
+               "id":"1",
+               "content":"comment 1 \n dz \n dep",
+               "owner":{  
+                  "id":"2",
+                  "name":"Thanh-Dung",
+                  "avatar":"avatar2.jpg"
+               },
+               "postedDate":1494488737
+            },
+            {  
+               "id":"1",
+               "content":"comment 1 \n dz \n dep",
+               "owner":{  
+                  "id":"2",
+                  "name":"Thanh-Dung",
+                  "avatar":"avatar2.jpg"
+               },
+               "postedDate":1494488737
+            }
          ]
       },
-
-	{  
+      {  
          "id":"aba2",
-        "title":"Topic 1",
+         "title":"Topic 1",
          "content":"Today I'm gonna tell you this.\nasg \n fuck",
          "postedDate":1494488819,
          "owner":{  
@@ -25,7 +124,8 @@
             "avatar":"avatar2.jpg"
          },
          "comments":[  
+
          ]
-      },      
+      }
    ]
 }

@@ -35,6 +35,7 @@ class BaseViewController: UIViewController {
     // MARK: Show Details
     func showDetails(topic: Topic) {
         let detailsVC = DetailsVC(nibName: Constants.ViewControllers.detailsVC, bundle: nil)
+        detailsVC.topic = topic
         self.navigationController?.pushViewController(detailsVC, animated: true)
     }
 }

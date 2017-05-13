@@ -17,6 +17,9 @@ class DetailsVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        detailsView.topic = topic
+        detailsView.loadView()
     }
 
     @IBAction func back(_ sender: UIButton) {

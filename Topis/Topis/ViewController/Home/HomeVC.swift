@@ -70,7 +70,7 @@ extension HomeVC: UITableViewDataSource {
         
         let topic = self.topics[indexPath.row]
         let content = topic.content
-        let height = content.heightWithLineBreak(withConstrainedWidth: tableView.frame.size.width, font: UIFont(name: GothamFontName.Book.rawValue, size: 15)!)
+        let height = content.heightWithLineBreak(withConstrainedWidth: tableView.frame.size.width, font: Constants.contentFont)
         
         return defaultHeight + height
     }

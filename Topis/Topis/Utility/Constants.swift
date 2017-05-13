@@ -7,10 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 struct Constants {
     struct Identifiers {
         static let topicCell = "TopicCell"
+        static let commentCell = "CommentCell"
     }
     
     struct ViewControllers {
@@ -51,4 +53,8 @@ struct Constants {
     static let messageExceedContentLength = "Your content exceeds the maximum length (\(Constants.maximumTopicLength) characters)!"
     
     static let messageEnterNothing = "You didn't enter the content of your topic!"
+    
+    static let contentFont: UIFont = {
+        return UIFont(name: GothamFontName.Book.rawValue, size: 15)
+    }()!
 }
