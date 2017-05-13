@@ -9,30 +9,35 @@
 import UIKit
 
 protocol DetailsViewDelegate: class {
-    func didUpdateHeight()
+    func willShowAlert(withTitle: String, message: String)
 }
 
 class DetailsView: UIView {
     
     // MARK: Initialization
     @IBOutlet weak var container: UIView!
-    
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
 
-    // constraints
+    @IBOutlet weak var inputCommentView: UIView!
+    @IBOutlet weak var commentTextView: UITextView!
+    @IBOutlet weak var commentPlaceHolder: UILabel!
+    
+    // layout constraints
     @IBOutlet weak var constraintContentHeight: NSLayoutConstraint!
     @IBOutlet weak var constraintContainerHeight: NSLayoutConstraint!
-    
+    @IBOutlet weak var constraintInputBottom: NSLayoutConstraint!
+    @IBOutlet weak var constraintInputHeight: NSLayoutConstraint!
     
     var topic: Topic!
+    var currentUser: User!
     
     weak var delegate: DetailsViewDelegate?
     @IBOutlet weak var commentTableView: UITableView!
-    
+    var isSetPlaceHolder: Bool = true
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
@@ -51,6 +56,16 @@ class DetailsView: UIView {
         self.loadComments()
         
         self.adjustContainerHeight()
+        
+        // set-up input comment view
+        commentTextView.delegate = self
+        // add keyboard observer
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+        commentTextView.layer.borderColor = UIColor.lightGray.cgColor
+        commentTextView.layer.borderWidth = 2.0
+        commentTextView.layer.cornerRadius = 10.0
     }
     
     // MARK: Content
@@ -71,6 +86,24 @@ class DetailsView: UIView {
         self.setupCommentTable()
         
         commentTableView.reloadData()
+    }
+    
+    // MARK: Input Comment
+    @IBAction func postComment(_ sender: UIButton) {
+        let comment = Comment()
+        comment.id = Utils.createNewUUID()
+        comment.owner = currentUser
+        comment.content = commentTextView.text
+        comment.postedDate = Date()
+        
+        topic.comments.append(comment)
+        
+//        self.delegate?.didPostComment()
+        // reload views after posting comments
+        commentTextView.text = ""
+        commentTextView.resignFirstResponder()
+        self.adjustContainerHeight()
+        self.commentTableView.reloadData()
     }
 }
 
@@ -160,5 +193,65 @@ extension DetailsView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+    }
+}
+
+// MARK: TextViewDelegate
+extension DetailsView: UITextViewDelegate {
+    // MARK: Set Place Holder
+    func setPlaceHolderText() {
+        isSetPlaceHolder = true
+        commentPlaceHolder.isHidden = false
+    }
+    
+    func removePlaceHolderText() {
+        isSetPlaceHolder = false
+        commentPlaceHolder.isHidden = true
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        // check if text is empty to set placeholder
+        if textView.text == "" {
+            self.setPlaceHolderText()
+        }
+        
+        // adjust input size
+        // kind of a magic number here
+        // will figure out that later
+        let height = textView.text.heightWithLineBreak(withConstrainedWidth: textView.frame.size.width, font: Constants.contentFont) * 1.5
+        constraintInputHeight.constant = max(height, 30)
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if isSetPlaceHolder == true && text != "" {
+            self.removePlaceHolderText()
+            return true
+        }
+        
+        let isValidLength = textView.text.characters.count + (text.characters.count - range.length) <= Constants.maximumCommentLength
+        
+        if isValidLength == false {
+            // show alert here
+            self.delegate?.willShowAlert(withTitle: Constants.warningTitle, message: Constants.commentExceedContentLength)
+        }
+        
+        return isValidLength
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            let keyboardHeight = keyboardSize.height
+            
+            // put inputView right in top of keyboard
+            UIView.animate(withDuration: 0.5, animations: { 
+                self.constraintInputBottom.constant = keyboardHeight - Constants.bottomTabbarHeight
+            })
+        }
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        UIView.animate(withDuration: 0.5) { 
+            self.constraintInputBottom.constant = 0
+        }
     }
 }

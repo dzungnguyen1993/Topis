@@ -15,16 +15,12 @@ class DataManager: NSObject {
         
     }
     
-    func getListTopic() -> [Topic] {
+    func getTopicList() -> TopicList? {
         let jsonString = Constants.fakeJSON
         
-        let topics = TopicList(JSONString: jsonString)
+        let topicList = TopicList(JSONString: jsonString)
         
-        guard topics != nil else {
-            return [Topic]()
-        }
-        
-        return topics!.listTopics
+        return topicList
     }
     
     func getCurrentUser() -> User {

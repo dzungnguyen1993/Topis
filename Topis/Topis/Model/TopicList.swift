@@ -9,13 +9,48 @@
 import ObjectMapper
 
 class TopicList: Mappable {
-    var listTopics: [Topic] = [Topic]()
+    internal var topics: [Topic] = [Topic]()
     
-    required convenience init?(map: Map) {
+    required convenience init(map: Map) {
         self.init()
     }
     
+    required init() {
+        
+    }
+    
     func mapping(map: Map) {
-        listTopics <- map["topics"]
+        topics <- map["topics"]
+    }
+    
+    init(topics: [Topic]) {
+        self.topics = topics
+        self.sort()
+    }
+    
+    func sort() {
+        
+    }
+    
+    func add(topic: Topic) {
+        self.topics.append(topic)
+    }
+    
+    lazy var count: Int = {
+        return self.topics.count
+    }()
+    
+    func filter(text: String) -> [Topic] {
+        let result = topics.filter { (topic) -> Bool in
+            return topic.title.lowercased().contains(text.lowercased())
+        }
+        
+        return result
+    }
+}
+
+extension TopicList {
+    subscript (i: Int) -> Topic {
+        return self.topics[i]
     }
 }

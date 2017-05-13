@@ -14,14 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     var currentUser: User?
-    var listTopic: [Topic] = [Topic]()
+    var topicList: TopicList?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         // fake data here
         self.currentUser = DataManager.shared.getCurrentUser()
-        self.listTopic = DataManager.shared.getListTopic()
+        self.topicList = DataManager.shared.getTopicList()
         
         return true
     }

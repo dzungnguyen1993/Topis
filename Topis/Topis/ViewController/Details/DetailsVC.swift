@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailsVC: UIViewController {
+class DetailsVC: BaseViewController {
 
     var topic: Topic!
     @IBOutlet weak var detailsView: DetailsView!
@@ -19,10 +19,19 @@ class DetailsVC: UIViewController {
         // Do any additional setup after loading the view.
         
         detailsView.topic = topic
+        detailsView.currentUser = self.appDelegate.currentUser
         detailsView.loadView()
+        
+        detailsView.delegate = self
     }
 
     @IBAction func back(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+}
+
+extension DetailsVC: DetailsViewDelegate {
+    func willShowAlert(withTitle title: String, message: String) {
+        self.showAlert(withTitle: title, message: message)
     }
 }

@@ -22,6 +22,11 @@
 		B92550441EC5BA7F0059A57A /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = B92550431EC5BA7F0059A57A /* back.png */; };
 		B92550461EC5C51A0059A57A /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92550451EC5C51A0059A57A /* DetailsView.swift */; };
 		B92550481EC5C5250059A57A /* DetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92550471EC5C5250059A57A /* DetailsView.xib */; };
+		B925B6581EC6FD4A00F3EB7D /* SmallTopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925B6561EC6FD4A00F3EB7D /* SmallTopicCell.swift */; };
+		B925B6591EC6FD4A00F3EB7D /* SmallTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B925B6571EC6FD4A00F3EB7D /* SmallTopicCell.xib */; };
+		B925B65C1EC7145200F3EB7D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925B65B1EC7145200F3EB7D /* ListView.swift */; };
+		B925B65E1EC715FF00F3EB7D /* ListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B925B65D1EC715FF00F3EB7D /* ListView.xib */; };
+		B925B6601EC7177100F3EB7D /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = B925B65F1EC7177100F3EB7D /* filter.png */; };
 		B964F2121EC2C51400431FE6 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B964F2101EC2C51400431FE6 /* TopicCell.swift */; };
 		B964F2131EC2C51400431FE6 /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B964F2111EC2C51400431FE6 /* TopicCell.xib */; };
 		B987D0EB1EC1C47C003BFD23 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987D0EA1EC1C47C003BFD23 /* Utils.swift */; };
@@ -71,6 +76,11 @@
 		B9B51CAB1EC223B4001AED2B /* add_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B51CA91EC223B4001AED2B /* add_selected.png */; };
 		B9B51CAC1EC223B4001AED2B /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B51CAA1EC223B4001AED2B /* add.png */; };
 		B9B51CB01EC22A48001AED2B /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B51CAF1EC22A48001AED2B /* search.png */; };
+		B9E53E6D1EC7375300DBFF16 /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E53E6B1EC7375300DBFF16 /* FilterVC.swift */; };
+		B9E53E6E1EC7375300DBFF16 /* FilterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9E53E6C1EC7375300DBFF16 /* FilterVC.xib */; };
+		B9E53E701EC73F2200DBFF16 /* TopicUpvoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E53E6F1EC73F2200DBFF16 /* TopicUpvoteList.swift */; };
+		B9E53E721EC73F2C00DBFF16 /* TopicDownvoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E53E711EC73F2C00DBFF16 /* TopicDownvoteList.swift */; };
+		B9E53E741EC73F3A00DBFF16 /* TopicPostedDateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E53E731EC73F3A00DBFF16 /* TopicPostedDateList.swift */; };
 		B9EEA8C51EC616A900631BFB /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EEA8C31EC616A900631BFB /* CommentCell.swift */; };
 		B9EEA8C61EC616A900631BFB /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9EEA8C41EC616A900631BFB /* CommentCell.xib */; };
 		EDFBB6876D2136B8D132CEEC /* Pods_Topis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DF01E652F841E4527E5B92 /* Pods_Topis.framework */; };
@@ -116,6 +126,11 @@
 		B92550431EC5BA7F0059A57A /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		B92550451EC5C51A0059A57A /* DetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		B92550471EC5C5250059A57A /* DetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsView.xib; sourceTree = "<group>"; };
+		B925B6561EC6FD4A00F3EB7D /* SmallTopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallTopicCell.swift; sourceTree = "<group>"; };
+		B925B6571EC6FD4A00F3EB7D /* SmallTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmallTopicCell.xib; sourceTree = "<group>"; };
+		B925B65B1EC7145200F3EB7D /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		B925B65D1EC715FF00F3EB7D /* ListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListView.xib; sourceTree = "<group>"; };
+		B925B65F1EC7177100F3EB7D /* filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter.png; sourceTree = "<group>"; };
 		B964F2101EC2C51400431FE6 /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		B964F2111EC2C51400431FE6 /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
 		B987D0EA1EC1C47C003BFD23 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -171,6 +186,11 @@
 		B9B51CA91EC223B4001AED2B /* add_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_selected.png; sourceTree = "<group>"; };
 		B9B51CAA1EC223B4001AED2B /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		B9B51CAF1EC22A48001AED2B /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		B9E53E6B1EC7375300DBFF16 /* FilterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
+		B9E53E6C1EC7375300DBFF16 /* FilterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterVC.xib; sourceTree = "<group>"; };
+		B9E53E6F1EC73F2200DBFF16 /* TopicUpvoteList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicUpvoteList.swift; sourceTree = "<group>"; };
+		B9E53E711EC73F2C00DBFF16 /* TopicDownvoteList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDownvoteList.swift; sourceTree = "<group>"; };
+		B9E53E731EC73F3A00DBFF16 /* TopicPostedDateList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicPostedDateList.swift; sourceTree = "<group>"; };
 		B9EEA8C31EC616A900631BFB /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		B9EEA8C41EC616A900631BFB /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		BFD96B930151636400114425 /* Pods-TopisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopisTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopisTests/Pods-TopisTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -230,15 +250,38 @@
 		B92550361EC5AEDD0059A57A /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				B925B65A1EC7144300F3EB7D /* ListView */,
+				B925B6551EC6FB4A00F3EB7D /* SearchTopic */,
 				B92550371EC5AF0E0059A57A /* ExploreVC.swift */,
 				B92550381EC5AF0E0059A57A /* ExploreVC.xib */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
 		};
+		B925B6551EC6FB4A00F3EB7D /* SearchTopic */ = {
+			isa = PBXGroup;
+			children = (
+				B925B6561EC6FD4A00F3EB7D /* SmallTopicCell.swift */,
+				B925B6571EC6FD4A00F3EB7D /* SmallTopicCell.xib */,
+			);
+			name = SearchTopic;
+			sourceTree = "<group>";
+		};
+		B925B65A1EC7144300F3EB7D /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				B925B65B1EC7145200F3EB7D /* ListView.swift */,
+				B925B65D1EC715FF00F3EB7D /* ListView.xib */,
+				B9E53E6B1EC7375300DBFF16 /* FilterVC.swift */,
+				B9E53E6C1EC7375300DBFF16 /* FilterVC.xib */,
+			);
+			name = ListView;
+			sourceTree = "<group>";
+		};
 		B987D0F41EC1C7D7003BFD23 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B925B65F1EC7177100F3EB7D /* filter.png */,
 				B92550431EC5BA7F0059A57A /* back.png */,
 				B925503F1EC5B1140059A57A /* explore.png */,
 				B9AD517D1EC457A4000FE602 /* avatar2.jpg */,
@@ -317,11 +360,11 @@
 		B98B9DE91EC17B1700C8DF53 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B9E53E751EC73F3C00DBFF16 /* TopicList */,
 				B9A49D261EC423E6008091A7 /* User.swift */,
 				B9A49D281EC423F7008091A7 /* Topic.swift */,
 				B9A49D2A1EC42403008091A7 /* Comment.swift */,
 				B9AD51791EC44763000FE602 /* DateTransform.swift */,
-				B9AD517F1EC4583C000FE602 /* TopicList.swift */,
 				B9AD51811EC4591C000FE602 /* DataManager.swift */,
 			);
 			path = Model;
@@ -419,6 +462,17 @@
 				B9B2C1DD1EC56B6000ED4877 /* fakeJson.txt */,
 			);
 			path = FakeData;
+			sourceTree = "<group>";
+		};
+		B9E53E751EC73F3C00DBFF16 /* TopicList */ = {
+			isa = PBXGroup;
+			children = (
+				B9AD517F1EC4583C000FE602 /* TopicList.swift */,
+				B9E53E6F1EC73F2200DBFF16 /* TopicUpvoteList.swift */,
+				B9E53E711EC73F2C00DBFF16 /* TopicDownvoteList.swift */,
+				B9E53E731EC73F3A00DBFF16 /* TopicPostedDateList.swift */,
+			);
+			name = TopicList;
 			sourceTree = "<group>";
 		};
 		B9EEA8C21EC6168800631BFB /* Comments */ = {
@@ -584,12 +638,14 @@
 				B925503E1EC5AF1B0059A57A /* DetailsVC.xib in Resources */,
 				B98B9E101EC183AA00C8DF53 /* Gotham-Thin.otf in Resources */,
 				B98B9E111EC183AA00C8DF53 /* Gotham-ThinIta.otf in Resources */,
+				B925B6601EC7177100F3EB7D /* filter.png in Resources */,
 				B98B9E061EC183AA00C8DF53 /* Gotham-Black.otf in Resources */,
 				B92550481EC5C5250059A57A /* DetailsView.xib in Resources */,
 				B98B9E161EC183AA00C8DF53 /* JetExplorer.ttf in Resources */,
 				B964F2131EC2C51400431FE6 /* TopicCell.xib in Resources */,
 				B9B51CAB1EC223B4001AED2B /* add_selected.png in Resources */,
 				B9B2C1DE1EC56B6000ED4877 /* fakeJson.txt in Resources */,
+				B925B65E1EC715FF00F3EB7D /* ListView.xib in Resources */,
 				B98B9E091EC183AA00C8DF53 /* Gotham-BoldIta.otf in Resources */,
 				B9B2C1E01EC56B9400ED4877 /* fakeUser.txt in Resources */,
 				B98B9E0A1EC183AA00C8DF53 /* Gotham-Book.otf in Resources */,
@@ -600,6 +656,8 @@
 				B98B9DC11EC17A6000C8DF53 /* Main.storyboard in Resources */,
 				B90280FC1EC2FB3B0097E80B /* like-checked.png in Resources */,
 				B90280FA1EC2FB3B0097E80B /* dislike-checked.png in Resources */,
+				B9E53E6E1EC7375300DBFF16 /* FilterVC.xib in Resources */,
+				B925B6591EC6FD4A00F3EB7D /* SmallTopicCell.xib in Resources */,
 				B98B9E0B1EC183AA00C8DF53 /* Gotham-BookIta.otf in Resources */,
 				B9B51CAC1EC223B4001AED2B /* add.png in Resources */,
 				B90280FF1EC306270097E80B /* avatar.jpg in Resources */,
@@ -753,12 +811,17 @@
 			files = (
 				B98B9DEF1EC17F5300C8DF53 /* TabBarController.swift in Sources */,
 				B92550461EC5C51A0059A57A /* DetailsView.swift in Sources */,
+				B9E53E6D1EC7375300DBFF16 /* FilterVC.swift in Sources */,
 				B9AD51821EC4591C000FE602 /* DataManager.swift in Sources */,
 				B99AC5FC1EC1D4AA00661294 /* HomeVC.swift in Sources */,
 				B9A49D291EC423F7008091A7 /* Topic.swift in Sources */,
+				B9E53E701EC73F2200DBFF16 /* TopicUpvoteList.swift in Sources */,
 				B987D0EF1EC1C4DF003BFD23 /* Extensions.swift in Sources */,
+				B9E53E721EC73F2C00DBFF16 /* TopicDownvoteList.swift in Sources */,
 				B987D0EB1EC1C47C003BFD23 /* Utils.swift in Sources */,
 				B98B9DBC1EC17A6000C8DF53 /* AppDelegate.swift in Sources */,
+				B925B65C1EC7145200F3EB7D /* ListView.swift in Sources */,
+				B925B6581EC6FD4A00F3EB7D /* SmallTopicCell.swift in Sources */,
 				B9AD517A1EC44763000FE602 /* DateTransform.swift in Sources */,
 				B987D0F11EC1C553003BFD23 /* Constants.swift in Sources */,
 				B9A49D2B1EC42403008091A7 /* Comment.swift in Sources */,
@@ -768,6 +831,7 @@
 				B925503D1EC5AF1B0059A57A /* DetailsVC.swift in Sources */,
 				B9EEA8C51EC616A900631BFB /* CommentCell.swift in Sources */,
 				B9B2C1DB1EC5629E00ED4877 /* BaseViewController.swift in Sources */,
+				B9E53E741EC73F3A00DBFF16 /* TopicPostedDateList.swift in Sources */,
 				B92550391EC5AF0E0059A57A /* ExploreVC.swift in Sources */,
 				B9A49D271EC423E6008091A7 /* User.swift in Sources */,
 				B99AC6011EC1D4CE00661294 /* NewTopicVC.swift in Sources */,

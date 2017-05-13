@@ -62,9 +62,10 @@ class NewTopicVC: BaseViewController {
         topic.owner = currentUser
         topic.postedDate = Date()
         
-        self.appDelegate.listTopic.append(topic)
+        self.appDelegate.topicList?.add(topic: topic)
         
         // jump to tab home
+        // TODO
         self.tabBarController?.selectedIndex = 0
     }
     
