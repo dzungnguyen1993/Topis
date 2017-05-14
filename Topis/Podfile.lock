@@ -1,0 +1,15 @@
+PODS:
+  - ObjectMapper (2.2.6)
+  - PopupDialog (0.5.4)
+
+DEPENDENCIES:
+  - ObjectMapper
+  - PopupDialog
+
+SPEC CHECKSUMS:
+  ObjectMapper: 042708195cc46c20871cbcbec0453826398273fd
+  PopupDialog: 75cf955693590b0cb2fdde00223fb65d99c57247
+
+PODFILE CHECKSUM: 1721e59cc6cc9c3d8a2c63386cf307e9b2388cf4
+
+COCOAPODS: 1.0.1
