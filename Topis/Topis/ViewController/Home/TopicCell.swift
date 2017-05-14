@@ -30,6 +30,7 @@ class TopicCell: UITableViewCell {
     @IBOutlet weak var upvoteView: UIView!
     @IBOutlet weak var downvoteView: UIView!
     @IBOutlet weak var commentView: UIView!
+    @IBOutlet weak var dateLabel: UILabel!
     weak var delegate: TopicCellDelegate?
     
     var topic: Topic!
@@ -83,6 +84,9 @@ class TopicCell: UITableViewCell {
         self.upLabel.text = "\(topic.upvote)"
         self.downLabel.text = "\(topic.downvote)"
         self.commentLabel.text = "\(topic.comments.count)"
+        
+        // set date
+        self.dateLabel.text = "Posted on " + topic.postedDate.toDateTimeString()
     }
     
     // add targets for views

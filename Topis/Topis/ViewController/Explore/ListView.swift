@@ -57,7 +57,7 @@ extension ListView: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let defaultHeight: CGFloat = 136
+        let defaultHeight: CGFloat = 166
         
         let topic = topicList[indexPath.row]
         let content = topic.content

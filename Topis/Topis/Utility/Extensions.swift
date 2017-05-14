@@ -43,3 +43,16 @@ extension String {
         return totalHeight
     }
 }
+
+extension Date {
+    func toDateTimeString() -> String
+    {
+        let formatter = DateFormatter()
+        //Specify Format of String to Parse
+//        formatter.timeZone = TimeZone(abbreviation: "UTC")
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let timeString = formatter.string(from: self)
+        
+        return timeString
+    }
+}
