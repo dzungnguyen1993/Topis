@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Gotham-Bold.otf">
+            <string>Gotham-Bold</string>
+        </array>
         <array key="Gotham-Book.otf">
             <string>Gotham-Book</string>
         </array>
@@ -35,7 +38,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="kqo-l9-5tJ"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
+                        <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>

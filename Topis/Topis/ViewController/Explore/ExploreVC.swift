@@ -22,11 +22,10 @@ class ExploreVC: BaseViewController {
     var searchResult: [Topic] = [Topic]()
     var topicList: TopicList!
     
+    @IBOutlet weak var constraintBottomSearchView: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // set textField delegate
-        self.searchTextField.delegate = self
         
         // search view
         self.initSearchView()
@@ -50,6 +49,7 @@ class ExploreVC: BaseViewController {
         self.resetViews()
     }
 
+    // reset view to its initial state
     func resetViews() {
         self.listView.isHidden = false
         
@@ -71,6 +71,7 @@ class ExploreVC: BaseViewController {
         }
     }
     
+    // add cancel button to the right of navigation bar
     func addCancelSearchButton() {
         let cancel = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelSearch))
         
@@ -82,6 +83,7 @@ class ExploreVC: BaseViewController {
     
     // MARK: Set up search view
     func initSearchView() {
+        // add input text field
         searchTextField.leftViewMode = UITextFieldViewMode.always
         let searchImgContainer = UIView(frame: CGRect(x: 0, y: 0, width: 25, height: 30))
         let leftSearchImage = UIImageView(frame: CGRect(x: 5, y: 5, width: 20.0, height: 20.0))
@@ -89,11 +91,19 @@ class ExploreVC: BaseViewController {
         searchImgContainer.addSubview(leftSearchImage)
         searchTextField.leftView = searchImgContainer
         
+        // init search table
         searchTableView.delegate = self
         searchTableView.dataSource = self
         
         searchTableView.register(UINib(nibName: Constants.Identifiers.smallTopicCell, bundle: nil), forCellReuseIdentifier: Constants.Identifiers.smallTopicCell)
         searchTableView.separatorStyle = .none
+        
+        // set textField delegate
+        self.searchTextField.delegate = self
+        
+        // add keyboard observer
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     @IBAction func searchValueChanged(_ sender: UITextField) {
@@ -109,6 +119,7 @@ class ExploreVC: BaseViewController {
     }
 }
 
+// MARK: Search topic
 extension ExploreVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -130,6 +141,7 @@ extension ExploreVC: UITextFieldDelegate {
         self.resetViews()
     }
 
+    // reset search table
     func resetSearch() {
         searchView.isHidden = true
         
@@ -146,9 +158,26 @@ extension ExploreVC: UITextFieldDelegate {
         
         self.searchTableView.reloadData()
     }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            let keyboardHeight = keyboardSize.height
+            
+            // put inputView right in top of keyboard
+            UIView.animate(withDuration: 0.5, animations: {
+                self.constraintBottomSearchView.constant = keyboardHeight - Constants.bottomTabbarHeight
+            })
+        }
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        UIView.animate(withDuration: 0.5) {
+            self.constraintBottomSearchView.constant = 0
+        }
+    }
 }
 
-// MARK: Search
+// MARK: Search Table
 extension ExploreVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchResult.count

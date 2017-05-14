@@ -50,6 +50,7 @@ class ListView: UIView {
     }
 }
 
+// MARK: TableView
 extension ListView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return topicList.count
@@ -88,6 +89,7 @@ extension ListView: TopicCellDelegate {
         
     }
     
+    // show details of this topic
     func tapComment(forTopic topic: Topic) {
         self.delegate?.willShowDetails(topic: topic)
     }
@@ -124,6 +126,7 @@ extension ListView: UITextFieldDelegate, UIPopoverPresentationControllerDelegate
         return UIModalPresentationStyle.none
     }
     
+    // filter topics based on 1 of 3 options
     func pickUpvote() {
         topicList = TopicUpvoteList(topics: self.topicList.topics)
         filterTextField.text = Constants.filterOptions[0]

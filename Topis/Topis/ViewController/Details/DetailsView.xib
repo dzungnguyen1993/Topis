@@ -10,8 +10,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Gotham-Bold.otf">
+            <string>Gotham-Bold</string>
+        </array>
+        <array key="Gotham-BoldIta.otf">
+            <string>Gotham-BoldItalic</string>
+        </array>
         <array key="Gotham-Book.otf">
             <string>Gotham-Book</string>
+        </array>
+        <array key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
         </array>
     </customFonts>
     <objects>
@@ -55,8 +64,8 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aN5-za-LMX">
-                                            <rect key="frame" x="66" y="8" width="301" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="66" y="8" width="301" height="19"/>
+                                            <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="19"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -78,7 +87,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="15" id="UyR-qk-8Q9"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
+                                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -105,16 +114,16 @@
                                     <rect key="frame" x="0.0" y="165" width="375" height="472"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdB-sT-9ST">
-                                            <rect key="frame" x="8" y="8" width="359" height="20.5"/>
+                                            <rect key="frame" x="8" y="8" width="359" height="25"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="20" id="35U-AB-Xny"/>
+                                                <constraint firstAttribute="height" constant="25" id="35U-AB-Xny"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Gotham-BoldItalic" family="Gotham" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <tableView clipsSubviews="YES" contentMode="scaleToFill" scrollEnabled="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cse-O0-4gb">
-                                            <rect key="frame" x="8" y="36.5" width="359" height="427.5"/>
+                                            <rect key="frame" x="8" y="41" width="359" height="423"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </tableView>
                                     </subviews>

@@ -69,6 +69,9 @@ extension TabBarController: UITabBarControllerDelegate {
         }
         
         // Our method
+        let appDelegate = Utils.appDelegate()
+        appDelegate.previousIndex = self.selectedIndex
+        
         animateToTab(toIndex: toIndex)
         return true
     }

@@ -11,6 +11,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Gotham-Bold.otf">
+            <string>Gotham-Bold</string>
+        </array>
         <array key="Gotham-Medium.otf">
             <string>Gotham-Medium</string>
         </array>
@@ -18,9 +21,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewTopicVC" customModule="Topis" customModuleProvider="target">
             <connections>
+                <outlet property="avatarImageView" destination="QfV-RV-3aP" id="hdU-25-i9T"/>
                 <outlet property="inputTextView" destination="NYy-yu-KhU" id="25U-oE-4wg"/>
                 <outlet property="placeHolderLabel" destination="lCa-R3-NXF" id="2Yv-5y-qI9"/>
                 <outlet property="titleTextField" destination="enY-tQ-OlT" id="0OO-tj-MWj"/>
+                <outlet property="userNameLabel" destination="fXv-dG-5bE" id="gez-NL-w6K"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -83,15 +88,15 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="693-Fg-Y7S">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QfV-RV-3aP">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QfV-RV-3aP">
                                             <rect key="frame" x="8" y="8" width="54" height="54"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="QfV-RV-3aP" secondAttribute="height" multiplier="1:1" id="mFd-7H-en5"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dzung Nguyen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXv-dG-5bE">
-                                            <rect key="frame" x="70" y="8" width="297" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXv-dG-5bE">
+                                            <rect key="frame" x="70" y="8" width="297" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="19"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -171,7 +176,4 @@
             <point key="canvasLocation" x="28.5" y="59.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="avatar.jpg" width="886" height="886"/>
-    </resources>
 </document>

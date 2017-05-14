@@ -16,6 +16,7 @@ protocol FilterVCDelegate: class {
 
 class FilterVC: UIViewController {
 
+    // MARK: Initialization
     @IBOutlet weak var tableView: UITableView!
     weak var delegate: FilterVCDelegate?
     

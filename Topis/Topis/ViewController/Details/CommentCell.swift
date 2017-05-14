@@ -20,14 +20,13 @@ class CommentCell: UITableViewCell {
         // Initialization code
     }
     
+    // load data to UI
     func loadData(comment: Comment) {
         self.avatarImageView.image = UIImage(named: comment.owner.avatar)
         
         self.userNameLabel.text = comment.owner.name
-        self.userNameLabel.sizeToFit()
         
         // set contents
         self.contentLabel.text = comment.content
-        self.contentLabel.sizeToFit()
     }
 }

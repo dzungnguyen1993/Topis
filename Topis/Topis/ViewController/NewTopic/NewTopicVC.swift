@@ -10,20 +10,28 @@ import UIKit
 
 class NewTopicVC: BaseViewController {
 
+    // MARK: Initialization
     @IBOutlet weak var inputTextView: UITextView!
     var isSetPlaceHolder: Bool = true
     @IBOutlet weak var placeHolderLabel: UILabel!
     let placeHolderText = "Share your thought!"
     var currentUser: User!
     @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var userNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         inputTextView.delegate = self
         
+        // init placeHolderLabel
         self.currentUser = self.appDelegate.currentUser
         placeHolderLabel.text = placeHolderText
+        
+        // set user info
+        avatarImageView.image = UIImage(named: currentUser.avatar)
+        userNameLabel.text = currentUser.name
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,6 +45,7 @@ class NewTopicVC: BaseViewController {
         placeHolderLabel.isHidden = false
     }
     
+    // remove place holder
     func removePlaceHolderText() {
         isSetPlaceHolder = false
         placeHolderLabel.isHidden = true
@@ -44,7 +53,7 @@ class NewTopicVC: BaseViewController {
 
     // MARK: Actions
     @IBAction func cancelPost(_ sender: UIButton) {
-        self.tabBarController?.selectedIndex = 0
+        self.tabBarController?.selectedIndex = self.appDelegate.previousIndex
     }
     
     @IBAction func postTopic(_ sender: UIButton) {
@@ -64,15 +73,15 @@ class NewTopicVC: BaseViewController {
         
         self.appDelegate.topicList?.add(topic: topic)
         
-        // jump to tab home
-        // TODO
-        self.tabBarController?.selectedIndex = 0
+        // jump to previous tab
+        self.tabBarController?.selectedIndex = self.appDelegate.previousIndex
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         self.reset()
     }
     
+    // reset input
     func reset() {
         titleTextField.resignFirstResponder()
         titleTextField.text = ""

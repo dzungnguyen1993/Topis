@@ -73,14 +73,11 @@ class TopicCell: UITableViewCell {
         
         self.nameLabel.text = topic.owner.name
         
-        self.nameLabel.numberOfLines = 0
-        self.nameLabel.sizeToFit()
-        
         self.titleLabel.text = topic.title
         
         // set contents
         self.contentLabel.text = topic.content
-        self.contentLabel.sizeToFit()
+//        self.contentLabel.sizeToFit()
         
         // set number of upvote, downvote, comments
         self.upLabel.text = "\(topic.upvote)"

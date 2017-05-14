@@ -28,6 +28,11 @@ class DetailsVC: BaseViewController {
     @IBAction func back(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+
+    // pop to root view of this current tab before navigating to other tab in TabBarController
+    override func viewDidDisappear(_ animated: Bool) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
 }
 
 extension DetailsVC: DetailsViewDelegate {

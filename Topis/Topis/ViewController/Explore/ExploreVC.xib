@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExploreVC" customModule="Topis" customModuleProvider="target">
             <connections>
+                <outlet property="constraintBottomSearchView" destination="gjy-aY-0SY" id="Bk8-aD-Oh9"/>
                 <outlet property="listView" destination="9ar-PN-ziW" id="Va8-OF-GkT"/>
                 <outlet property="searchNavigationItem" destination="vJn-cy-UA3" id="8tm-oD-grV"/>
                 <outlet property="searchTableView" destination="2dv-KM-Hxz" id="iFB-UL-H2M"/>

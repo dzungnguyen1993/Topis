@@ -50,19 +50,22 @@ class DetailsView: UIView {
         self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[view]|", options:NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": self.contentView]))
     }
     
+    // load data to UI
     func loadView() {
         self.loadContent()
         
         self.loadComments()
         
+        // adjust auto layout, set height based on content
         self.adjustContainerHeight()
         
-        // set-up input comment view
+        // set up input comment view
         commentTextView.delegate = self
         // add keyboard observer
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
+        // set text view border
         commentTextView.layer.borderColor = UIColor.lightGray.cgColor
         commentTextView.layer.borderWidth = 2.0
         commentTextView.layer.cornerRadius = 10.0
@@ -98,17 +101,19 @@ class DetailsView: UIView {
         
         topic.comments.append(comment)
         
-//        self.delegate?.didPostComment()
         // reload views after posting comments
         commentTextView.text = ""
+        self.setPlaceHolderText()
         commentTextView.resignFirstResponder()
         self.adjustContainerHeight()
         self.commentTableView.reloadData()
     }
 }
 
+// MARK: Adjust constraints
 extension DetailsView {
     func adjustContainerHeight() {
+        // kind of a magic number here, but we can see this number in xib
         let topHeight: CGFloat = 66
         
         // calculate height of content view
@@ -134,7 +139,7 @@ extension DetailsView {
     }
     
     func adjustCommentTableHeight() -> CGFloat {
-        let defaultHeight: CGFloat = 36
+        let defaultHeight: CGFloat = 25 + 8 + 8 // sorry me in the future for this magic number
         
         var totalHeight: CGFloat = 0
         
@@ -158,6 +163,7 @@ extension DetailsView {
         commentTableView.dataSource = self
     }
     
+    // get height of each comment based on content
     func getHeight(forComment comment: Comment, constraintWidth: CGFloat) -> CGFloat {
         let defaultHeight: CGFloat = 40 // sorry me in the future for this hardcode
         
@@ -168,6 +174,7 @@ extension DetailsView {
     }
 }
 
+// MARK: Comment Table
 extension DetailsView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return topic.comments.count
@@ -222,6 +229,7 @@ extension DetailsView: UITextViewDelegate {
         constraintInputHeight.constant = max(height, 30)
     }
     
+    // limit the length of input text
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if isSetPlaceHolder == true && text != "" {
             self.removePlaceHolderText()

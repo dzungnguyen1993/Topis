@@ -25,6 +25,7 @@ class SmallTopicCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // load data to UI
     func loadData(topic: Topic) {
         self.avatarImageView.image = UIImage(named: topic.owner.avatar)
         self.userNameLabel.text = topic.owner.name

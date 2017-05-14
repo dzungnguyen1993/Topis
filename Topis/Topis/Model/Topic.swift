@@ -29,5 +29,7 @@ class Topic: Mappable {
         postedDate <- (map["postedDate"], DateTransform())
         owner <- map["owner"]
         comments <- map["comments"]
+        upvote <- map["upvote"]
+        downvote <- map["downvote"]
     }
 }
